@@ -1,9 +1,108 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
+const products = [
+  {
+    id: 1,
+    title: "Air Force",
+    price: 150,
+    colors: [
+      {
+        code: "black",
+        img: "/assets/img/air.png",
+      },
+      {
+        code: "darkblue",
+        img: "/assets/img/air2.png",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Air Jordan",
+    price: 119,
+    colors: [
+      {
+        code: "lightgray",
+        img: "/assets/img/jordan.png",
+      },
+      {
+        code: "green",
+        img: "/assets/img/jordan2.png",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Blazer",
+    price: 109,
+    colors: [
+      {
+        code: "lightgray",
+        img: "/assets/img/blazer.png",
+      },
+      {
+        code: "green",
+        img: "/assets/img/blazer2.png",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Crater",
+    price: 189,
+    colors: [
+      {
+        code: "black",
+        img: "/assets/img/crater.png",
+      },
+      {
+        code: "lightgray",
+        img: "/assets/img/crater2.png",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Hippie",
+    price: 205,
+    colors: [
+      {
+        code: "gray",
+        img: "/assets/img/hippie.png",
+      },
+      {
+        code: "black",
+        img: "/assets/img/hippie2.png",
+      },
+    ],
+  },
+];
+
+let choosenProduct = products[0];
+
+const currentProductImg = document.querySelector(".productImg");
+const currentProductTitle = document.querySelector(".productTitle");
+const currentProductPrice = document.querySelector(".productPrice");
+const currentProductColors = document.querySelectorAll(".color");
+const currentProductSiozes = document.querySelectorAll(".size");
+
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
-
+      // zmiana obecnego slajdu
       wrapper.style.transform = `translateX(${-100 * index}vw)`;
+
+      // zmiana wybranego produktu
+      choosenProduct = products[index];
+
+      // zmiana tekstu obecnego produktu
+      currentProductTitle.textContent = choosenProduct.title;
+      currentProductPrice.textContent = choosenProduct.price + "zł";
+      currentProductImg.src = choosenProduct.colors[0].img;
+
+      // zmiana koloru danego produktu
+      currentProductColors.forEach((color,index) => {
+        color.style.backgroundColor = choosenProduct.colors[index].code;
+      });
     });
   });
