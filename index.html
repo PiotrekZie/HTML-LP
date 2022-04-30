@@ -42,7 +42,9 @@
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">150zł</h2>
-                <button class="buyButton">BUY NOW!</button>
+                <a href="#product">
+                    <button class="buyButton">Buy Now!</button>
+                </a>            
             </div>
             <!-- 2nd product -->
             <div class="sliderItem">
@@ -50,7 +52,9 @@
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">JORDAN <br/> SEASON</h1>
                 <h2 class="sliderPrice">119zł</h2>
-                <button class="buyButton">Buy Now!</button>
+                <a href="#product">
+                    <button class="buyButton">Buy Now!</button>
+                </a>            
             </div>
             <!-- 3rd product -->
             <div class="sliderItem">
@@ -58,7 +62,9 @@
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">BLAZER <br/> SEASON</h1>
                 <h2 class="sliderPrice">109zł</h2>
-                <button class="buyButton">Buy Now!</button>
+                <a href="#product">
+                    <button class="buyButton">Buy Now!</button>
+                </a>
             </div>
             <!-- 4th product -->
             <div class="sliderItem">
@@ -66,7 +72,9 @@
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">CRATE <br/> SEASON</h1>
                 <h2 class="sliderPrice">189zł</h2>
-                <button class="buyButton">Buy Now!</button>
+                <a href="#product">
+                    <button class="buyButton">Buy Now!</button>
+                </a>
             </div>
             <!-- 5th product -->
             <div class="sliderItem">
@@ -74,7 +82,9 @@
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">HIPPIE <br/> SEASON</h1>
                 <h2 class="sliderPrice">205zł</h2>
-                <button class="buyButton">Buy Now!</button>
+                <a href="#product">
+                    <button class="buyButton">Buy Now!</button>
+                </a>
             </div>
         </div>
     </div>
@@ -100,7 +110,7 @@
             <div class="featureDesc">Keep in touch via email and support system.</div>
         </div>
     </div>
-    <div class="product">
+    <div class="product" id="product">
         <img src="/assets/img/air.png" alt="" class="productImg">
         <div class="productDetails">
             <h1 class="productTitle">AIR FORCE</h1>
@@ -116,6 +126,28 @@
                 <div class="size">44</div>
             </div>
             <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="paytitle">Personal Information</h1>
+            <label>Name and Surename</label>
+            <input type="text" placeholder="Piotr Zieliński" class="payInput">
+            <label>Phone</label>
+            <input type="text" placeholder="+48 234 564 98" class="payInput">
+            <label>Adres</label>
+            <input type="text" placeholder="Poznan, Ratajczaka" class="payInput">
+            <h1 class="paytitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="/assets/img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="/assets/img/master.png" width="40" alt="" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
         </div>
     </div>
     <script src="/assets/js/app.js"></script>
