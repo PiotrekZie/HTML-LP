@@ -9,11 +9,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "/assets/img/air.png",
+        img: "./assets/img/air.png",
       },
       {
         code: "darkblue",
-        img: "/assets/img/air2.png",
+        img: "./assets/img/air2.png",
       },
     ],
   },
@@ -24,11 +24,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "/assets/img/jordan.png",
+        img: "./assets/img/jordan.png",
       },
       {
         code: "green",
-        img: "/assets/img/jordan2.png",
+        img: "./assets/img/jordan2.png",
       },
     ],
   },
@@ -39,11 +39,11 @@ const products = [
     colors: [
       {
         code: "lightgray",
-        img: "/assets/img/blazer.png",
+        img: "./assets/img/blazer.png",
       },
       {
         code: "green",
-        img: "/assets/img/blazer2.png",
+        img: "./assets/img/blazer2.png",
       },
     ],
   },
@@ -54,11 +54,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "/assets/img/crater.png",
+        img: "./assets/img/crater.png",
       },
       {
         code: "lightgray",
-        img: "/assets/img/crater2.png",
+        img: "./assets/img/crater2.png",
       },
     ],
   },
@@ -69,11 +69,11 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "/assets/img/hippie.png",
+        img: "./assets/img/hippie.png",
       },
       {
         code: "black",
-        img: "/assets/img/hippie2.png",
+        img: "./assets/img/hippie2.png",
       },
     ],
   },
